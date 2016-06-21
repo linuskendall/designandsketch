@@ -105,7 +105,7 @@ a {
 #main #posts .product {
   padding-bottom: 1em;
   float: left;
- width: calc(100% / 3);  
+ width: calc(88% / 3);  
  display: inline-block;
  vertical-align: top;
  text-align:center;
