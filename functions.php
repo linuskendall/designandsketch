@@ -18,7 +18,7 @@ function create_my_post_types() {
         ),
         'public' => true,
    	'has_archive' => 'store',
-        'description' => __('Products for sale'),
+        'description' => __('Products I have for sale right now.'),
 	'supports' => array('title', 'editor', 'revisions', 'publicize', 'excerpt', 'thumbnail', 'custom-fields')
      )
    );
@@ -28,6 +28,21 @@ add_action( 'init', 'register_my_sidebars' );
 add_action( 'init', 'create_my_post_types' );
 
 add_theme_support( 'post-thumbnails' ); 
+
+global $no_sidebar;
+$no_sidebar = false;
+
+function has_no_sidebar() {
+  global $no_sidebar;
+  return $no_sidebar;
+}
+
+function custom_thumbs()
+{
+    add_image_size( 'product-thumbnail', 400, 400, true ); // Hard crop to exact dimensions (crops sides or top and bottom)
+}
+add_action( 'after_setup_theme', 'custom_thumbs' );
+
 
 
 function jeherve_custom_image( $media, $post_id, $args ) {
