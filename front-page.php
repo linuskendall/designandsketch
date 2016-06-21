@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
-
-  <div id="sliderstuff">
+<!--  <div id="sliderstuff">
     <script type="text/javascript">
     $(document).ready(function(){
     $('.bxslider').bxSlider({
@@ -17,9 +15,8 @@
     </ul>
   </div>
 
-  <div id="introtext">
-    <div id="main">
- 	<div id="main">
+  <div id="introtext"> -->
+<div id="main">
   <?php if (have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <div class="posts">
@@ -28,9 +25,9 @@
       <?php endwhile; ?>
   <?php endif;?>
 </div>
-  </div>
+<!--   </div>
 
-  <div id="homecolumns">
+ <div id="homecolumns">
     <div id="homecol1">
       <div class="flowerholder">
         <img src="<?php bloginfo('template_url');?>/pics/flowerhomecol.svg">
@@ -48,6 +45,6 @@
       <p>This is an online boutique showcasing my handmade designs. And then this.</p>
       <p class="outline">See my portfolio <span class="bigarrow"> > </span></p>
     </div>
-  </div>
+  </div> -->
 
 <?php get_footer(); ?>
