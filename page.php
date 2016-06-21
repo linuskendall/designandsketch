@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
 <div id="main">
   <?php if (have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
