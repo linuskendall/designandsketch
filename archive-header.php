@@ -3,7 +3,6 @@
 <div id="main">
   <?php if(!has_no_sidebar()) { get_sidebar(); } ?>
 
-  <div id="posts">
 	  <?php if (have_posts()) : ?>
 	      <?php if (is_category()) { ?>
 	        <h1><?php single_cat_title(); ?></h1>

@@ -1,4 +1,5 @@
 <?php global $no_sidebar; $no_sidebar=true; get_template_part('archive-header') ;?>
+<div id="products">
 	      <?php while(have_posts()) : the_post() ?>
 		<div class="product <?php get_post_class() ?>">
 		  <div class="product-thumbnail">
@@ -20,13 +21,13 @@
 		  <div class="product-order">
 		          <p>Price: <?php echo get_post_meta(get_the_ID(), 'price', true);?></p>
 			  <?php 
-				$order_form = get_post_meta(get_the_ID(), 'order-form', true);
-				if($order_form) :
-				?>
+			  $order_form = get_post_meta(get_the_ID(), 'order-form', true);
+			  if($order_form) :
+			  ?>
+				<a href="<?php echo $order_form ?>">Order</a>
 	                  <?php endif; ?>
-
-			<a href="<?php echo $order_form ?>">Order</a>
 		   </div>
 		</div>
 	      <?php endwhile; ?>
+</div>
 <?php get_template_part('archive-footer.php'); ?>

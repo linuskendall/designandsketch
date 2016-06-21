@@ -93,7 +93,7 @@ a {
   margin-bottom: 0.5em;
 }
 
-#main #posts h2.title a {
+#main h2.title a {
   color: inherit;
   text-decoration: none;
 }
@@ -102,29 +102,32 @@ a {
   clear: none;
 }
 
-#main #posts .product {
-  padding-bottom: 1em;
-  float: left;
- width: calc(88% / 3);  
+#main #products {
+}
+
+#main #products .product {
+ padding-bottom: 1em;
+ float: left;
+ width: calc(88% / 2);  
  display: inline-block;
  vertical-align: top;
  text-align:center;
  margin:2%;    
- padding: 20px;
+ padding: 10px;
 }
 
-#main #posts .product-thumbnail {
+#main #products .product-thumbnail {
 }
 
-#main #posts .product-thumbnail img {
+#main #products .product-thumbnail img {
   border-radius: 15px;
 }
 
-#main #posts .product-description {
+#main #products .product-description {
 	height: 150px;
 }
 
-#main #posts .product-description h2 {
+#main #products .product-description h2 {
 	font-size: 1.5em;
  	margin-bottom: 0;
 }
