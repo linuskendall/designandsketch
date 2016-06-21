@@ -35,29 +35,6 @@
         <label for="button" onclick></label>
 
         <?php wp_nav_menu(array('menu' => 'header-menu')); ?>
-      <!--  <ul>
-          <li id="contacthide"><a href="#">Contact Me</a></li>
-          <li id="socialhide">
-            <img src="pics/fb.svg">
-            <img src="pics/be.svg">
-            <img src="pics/pin.svg">
-          </li>
-        </ul>
-        
-        <ul>
-            <li><a href="#">My Design</a></li>
-            <li><a href="#">My Store</a></li>
-            <li><a href="#">My Blog</a></li>
-            <li><a href="#">My Story</a></li>
-            <li id="hireme"><a href="#">Hire me</a></li>
-            <li id="contacthide"><a href="#">Contact Me</a></li>
-        		<li id="socialhide">
-          		<img src="pics/fb.svg">
-          		<img src="pics/be.svg">
-          		<img src="pics/pin.svg">
-
-        		</li>
-        </ul>-->
     </nav>
 
     <div id="flower">
