@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
 
   <link href='https://fonts.googleapis.com/css?family=Tenor+Sans|Amatic+SC' rel='stylesheet' type='text/css'>
-  <link href='http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css' rel='stylesheet' type='text/css'>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
 
   <?php wp_head(); ?>
