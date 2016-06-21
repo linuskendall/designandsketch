@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Tenor+Sans|Amatic+SC' rel='stylesheet' type='text/css'>
+  <link href='http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css' rel='stylesheet' type='text/css'>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+
+<div class="content">
+  <div class="header">
+    <div id="logo">
+      <img src="pics/logo-01.png"/>
+    </div>
+
+    <nav role="custom-dropdown">
+        <input type="checkbox" id="button">
+        <label for="button" onclick></label>
+
+        <ul>
+            <li><a href="#">My Design</a></li>
+            <li><a href="#">My Store</a></li>
+            <li><a href="#">My Blog</a></li>
+            <li><a href="#">My Story</a></li>
+            <li id="hireme"><a href="#">Hire me</a></li>
+            <li id="contacthide"><a href="#">Contact Me</a></li>
+    		<li id="socialhide">
+    		<img src="pics/fb.svg">
+    		<img src="pics/be.svg">
+    		<img src="pics/pin.svg">
+
+    		 </li>
+        </ul>
+    </nav>
+
+    <div id="flower">
+      <img src="pics/Flowers header right.svg">
+    </div>
+  </div>
+
+  <div class="floaters">
+
+      <div id="contactme">
+        <img src="pics/contactme.svg">
+      </div>
+
+        <div id="socialbuttons">
+        <img src="pics/fb.svg">
+        <img src="pics/be.svg">
+        <img src="pics/pin.svg">
+      </div>
+  </div>
+
+  <div id="sliderstuff">
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      adaptiveHeight: true
+    });
+    });
+    </script>
+    <ul class="bxslider">
+      <li><img src="pics/planner.jpg"</li>
+      <li><img src="pics/planner2.jpg" /></li>
+    </ul>
+  </div>
+
+  <div id="introtext">
+    <p>Design and sketch is more like a logbook. This is where I present my ideas and sketches, build on them via digital or analogous media and then present them as my artwork that is as unique as it is precious. The main purpose for such a website to exist is to create some space for all viewers to appreciate art forms and designs that are varied and more customized. Here, much value is placed in creating items that are specific to the people who want to own them. Each item represents a sense of thought and feeling, and can be even further customized to evoke  a wonderful reaction on a very personal level.</p>
+  </div>
+
+  <div id="homecolumns">
+    <div id="homecol1">
+      <div class="flowerholder">
+        <img src="pics/flowerhomecol.svg">
+      </div>
+      <h2 class="outline" >Design in print</h2>
+      <p>I am a freelance graphic designer with over 3 years experience in this field.</p>
+      <p class="outline">See my portfolio <span class="bigarrow"> > </span> </p>
+    </div>
+
+    <div id="homecol2">
+      <div class="flowerholder">
+        <img src="pics/flowerhomecol.svg">
+      </div>
+      <h2 class="outline" >My store</h2>
+      <p>This is an online boutique showcasing my handmade designs. And then this.</p>
+      <p class="outline">See my portfolio <span class="bigarrow"> > </span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
