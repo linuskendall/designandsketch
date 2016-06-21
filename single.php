@@ -1,22 +1,25 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
 <div id="main">
+  <?php get_sidebar(); ?>
+  <div id="posts">
   <?php if (have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <div class="posts">
           <h2 class="title"><?php the_title(); ?></h2>
-          <?php if(has_post_thumbnail()) : ?>
+          <!--<?php if(has_post_thumbnail()) : ?>
             <div class="post-thumb">
               <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail();?></a>
             </div>
-          <?php endif;?>
+          <?php endif;?>-->
 
           <?php the_content(); ?>
+
+          <a name="comment"></a><?php comments_template(); ?>
         </div>
-        <!--<?php comments_template(); ?>-->
       <?php endwhile; ?>
   <?php endif;?>
+  </div>
 </div>
 
 <?php get_footer(); ?>
