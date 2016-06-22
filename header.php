@@ -9,10 +9,12 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>?v=10">
 
   <link href='https://fonts.googleapis.com/css?family=Tenor+Sans|Amatic+SC' rel='stylesheet' type='text/css'>
-  <script src="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+
+  <?php wp_enqueue_script('jquery'); ?>
+  <?php wp_enqueue_script('bxslider', 'http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js', array('jquery')); ?>
 
   <?php wp_head(); ?>
 </head>
@@ -28,8 +30,8 @@
     </div>
 
     <nav role="custom-dropdown">
-        <input type="checkbox" id="button">
-        <label for="button" onclick></label>
+        <input type="checkbox" id="custom_dropdown_button"/>
+        <label for="custom_dropdown_button"></label>
 
         <?php wp_nav_menu(array('menu' => 'header-menu')); ?>
     </nav>
