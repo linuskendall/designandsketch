@@ -54,6 +54,7 @@ a {
   margin-top:10px;
   width:72.5%;
   height: auto;
+  overflow: auto;
 }
 
 #main #sidebar {
@@ -124,7 +125,7 @@ a {
 }
 
 #main #products .product-description {
-	height: 150px;
+	min-height: 100px;
 }
 
 #main #products .product-description h2 {
@@ -291,6 +292,7 @@ label {
   width: 18%;
   padding-top: 1%;
   min-width: 150px;
+  margin: 0 auto;
 }
 
 .menuitem{
@@ -371,6 +373,7 @@ nav[role="custom-dropdown"] ul > li:hover > a {
   left:0%;
   left:1%;
   width:4%;
+  
 }
 
 #socialbuttons img{
@@ -392,6 +395,26 @@ nav[role="custom-dropdown"] ul > li:hover > a {
   #logo {
   }
 
+  #main {
+		width: 90%;
+//	position: relative;
+  }
+   
+  #main #sidebar {
+	text-align: left;
+        float: none;
+ //	position: absolute;
+//	bottom: 0;
+//	display: inline-block;
+  }
+
+  #main #posts {
+	margin-right: 0;
+	height: auto;
+//	position: relative;
+  }
+		
+
   #sliderstuff{
     margin-top: 20px;
   }
@@ -405,6 +428,9 @@ nav[role="custom-dropdown"] ul > li:hover > a {
       width:90%;margin-left:5%;
     }
 
+  .header {
+	  display: block;
+  }
   nav[role="custom-dropdown"] {
     width:100%;
     position:relative;
@@ -412,10 +438,15 @@ nav[role="custom-dropdown"] ul > li:hover > a {
     top:10px;
     padding-right:0px;
   }
-  nav[role="custom-dropdown"] ul {
+  nav[role="custom-dropdown"] div {
     display: none;
     height: 100%;
-	   padding:0;
+    padding:0;
+  }
+  nav[role="custom-dropdown"] ul {
+    height: 100%;
+    padding:0;
+  border-radius:0px;
   }
   nav[role="custom-dropdown"] ul  li{
     background-color: rgb(109,197,201);
@@ -437,20 +468,20 @@ nav[role="custom-dropdown"] ul > li:hover > a {
     top: 0;
     content: "\2261";
     font-size: 1.8em;
-	  color:black;
+    color:black;
   }
   nav[role="custom-dropdown"] input[type=checkbox]:checked ~ label:after {
     color: #222;
   }
-  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul {
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ div {
     display: block;
-	  width:100%;
+    width:100%;
   }
   nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li {
     width: 100%;
     opacity: .8;
     text-align: left;
-	  font-size:1em;
+    font-size:1em;
   }
   nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:after {
     position: absolute;
@@ -470,6 +501,17 @@ nav[role="custom-dropdown"] ul > li:hover > a {
   }
 
   #socialbuttons {
-    display:none;
+	position: fixed;
+	top: 0px;
+	right: 3%;
+ 	left: auto;
+	padding-top: 5px;
+	display: inline-block;
+	font-size: 0;
+	height: auto;
+  }
+  #socialbuttons img {
+	width: 2%;
+	min-width: 25px;
   }
 }
