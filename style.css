@@ -104,6 +104,7 @@ a {
 }
 
 #main #products {
+ display: flex;
 }
 
 #main #products .product {
@@ -115,6 +116,7 @@ a {
  text-align:center;
  margin:2%;    
  padding: 10px;
+  flex: 1;
 }
 
 #main #products .product-thumbnail {

@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <div id="main">
-  <div id="products">
   <?php if (have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <div class="posts">
@@ -29,7 +28,6 @@
         </div>
       <?php endwhile; ?>
   <?php endif;?>
-  </div>
 </div>
 
 <?php get_footer(); ?>
